@@ -1,0 +1,57 @@
+:root{
+  /* ── PIANO MATERIALS PALETTE ── */
+  --ivory:   #F7F4ED;   /* piano key — warm white */
+  --ivory2:  #EDE8DC;   /* aged ivory */
+  --cream:   #F2EDE3;   /* warm cream surface */
+  --parchment:#E8E0D0;  /* deep parchment */
+  --ebony:   #0D0C0A;   /* ebony wood — near black */
+  --ebony2:  #1A1917;   /* dark charcoal */
+  --ebony3:  #252320;   /* piano body */
+  --walnut:  #3D2E1E;   /* warm walnut tone */
+  --brass:   #B87D2A;   /* brass pedal */
+  --brass2:  #D4A042;   /* polished brass */
+  --brass3:  #E8C060;   /* bright brass highlight */
+  --felt:    #8B1E32;   /* piano felt — deep crimson */
+  --felt2:   #A83248;   /* lighter felt */
+  --silk:    #5A3E6B;   /* interior silk — deep plum */
+
+  /* ── SURFACES ── */
+  --bg:      #F7F4ED;
+  --bg2:     #F2EDE3;
+  --bg3:     #EDE8DC;
+  --bgdark:  #0D0C0A;
+  --bgdark2: #1A1917;
+
+  /* ── BORDERS ── */
+  --bd:  rgba(13,12,10,.1);
+  --bd2: rgba(13,12,10,.18);
+  --bdd: rgba(255,255,255,.1);
+
+  /* ── TEXT ── */
+  --tk:  #0D0C0A;   /* ebony text */
+  --t1:  #3A3530;   /* warm charcoal */
+  --t2:  #6B6258;   /* muted warm gray */
+  --t3:  #A09688;   /* light warm gray */
+  --tw:  #F7F4ED;   /* ivory white for dark bg */
+
+  --ease:  cubic-bezier(.22,1,.36,1);
+  --easein:cubic-bezier(.7,0,.84,0);
+}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--ivory);
+  color:var(--tk);
+  font-family:'Cormorant Garamond',serif;
+  font-weight:400;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  cursor:none;
+}
+body.locked{overflow:hidden}
+img{display:block;max-width:100%;height:auto}
+button,a{font-family:inherit;cursor:none;text-decoration:none;color:inherit;background:none;border:none}
+::selection{background:var(--felt);color:var(--ivory)}
+*:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+@media(pointer:coarse){body{cursor:auto}button,a{cursor:pointer}}
